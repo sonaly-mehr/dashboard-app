@@ -1,7 +1,7 @@
 "use client";
 
 import Sidebar from "@/components/Sidebar";
-import withAuth from "@/components/withAuth";
+import withAuth from "@/lib/withAuth";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "react-hot-toast";
 

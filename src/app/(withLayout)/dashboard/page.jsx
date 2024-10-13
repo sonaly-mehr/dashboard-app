@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import withAuth from "@/components/withAuth";
+import withAuth from "@/lib/withAuth";
 import {
   LineChart,
   Line,
