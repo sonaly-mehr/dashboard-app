@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+First, install the packages -> npm install
+
+Then run the development server:
 
 ```bash
 npm run dev
@@ -13,24 +13,45 @@ pnpm dev
 # or
 bun dev
 ```
+Deployed link on Vercel-> 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+DISCUSSION: 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1.Frontend Development:
 
-## Learn More
+- Utilized Next.js 14 with the App Router to structure the application efficiently.
+- Employed Tailwind CSS for styling to ensure a responsive and modern user interface.
+- Integrated Recharts for visualizing metrics data in an engaging format, enhancing user interaction and    understanding.
 
-To learn more about Next.js, take a look at the following resources:
+2.Backend Setup: 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Used Supabase as the backend service to handle user authentication and data storage.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3.Authentication:
 
-## Deploy on Vercel
+- Utilized Supabase's database features to fetch metrics data required for the dashboard.
+- Structured the database to optimize data retrieval for analytics.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Challenges Faced: 
+
+1.Integration Issues:
+- Faced challenges in integrating Supabase authentication with the Next.js app, particularly with session management and redirect logic.
+
+2.Data Fetching:
+- Ensuring that data was fetched correctly presented some difficulties, particularly with handling async operations and error management.
+
+3.Responsive Design:
+- Designing a responsive dashboard that accommodates various screen sizes while ensuring a seamless user experience proved to be complex. Tailwind CSS required meticulous configuration to achieve the desired layout
+
+Potential Improvements:
+
+1.Enhanced Error Handling:
+- Implement more robust error handling and logging mechanisms to provide clearer insights during data fetching and authentication processes.
+
+2.User Experience (UX) Enhancements:
+- Introduce loading indicators and skeleton screens while data is being fetched to improve user experience.
+
+3.Optimized Data Structure:
+- Review and optimize the Supabase database structure to minimize data retrieval times and improve query performance.
